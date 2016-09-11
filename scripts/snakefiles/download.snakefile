@@ -11,7 +11,8 @@ rule download_wget_hmms:
         "wget "
             "--continue "
             "--output-document {output.tarball} "
-            "2> {log} 1>&2"
+            "{params.url} "
+        "2> {log} 1>&2"
 
 
 
