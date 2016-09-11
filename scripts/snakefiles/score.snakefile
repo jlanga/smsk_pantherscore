@@ -1,7 +1,7 @@
 rule score_panther:
     input:
-        proteome = proteome_dir + "transcriptome.pep"
-        hmms = download_dir + "PANTHER11.0_hmmscoring/" ,
+        proteome = proteome_dir + "transcriptome.pep",
+        hmms = download_dir + "PANTHER11.0_hmmscoring/"
     output:
         tsv = panther_dir + "panther_scores.tsv"
     log:
