@@ -1,6 +1,5 @@
-samples:
-    A: data/samples/A.fastq
-    B: data/samples/B.fastq
+proteome:
+    "data/proteome/spil.faa"
 
 urls:
-    tarball: https://bitbucket.org/snakemake/snakemake/downloads/snakemake-tutorial-data.tar.gz
+    hmms: "ftp://ftp.pantherdb.org/hmm_scoring/current_release/PANTHER11.0_hmmscoring.tgz"

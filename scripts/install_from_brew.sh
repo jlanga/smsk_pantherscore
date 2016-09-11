@@ -1,11 +1,10 @@
 brew update
 
 brew install \
-    python3 \
-    graphviz
+    perl
 
 brew tap homebrew/science
+
 brew install \
-    homebrew/science/bwa \
-    homebrew/science/samtools \
-    homebrew/science/bcftools
+    homebrew/science/blast \
+    homebrew/science/hmmer2

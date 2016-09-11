@@ -5,11 +5,10 @@ configfile: "config.yaml"
 snakefiles = "scripts/snakefiles/"
 
 include: snakefiles + "folders.snakefile"
-include: snakefiles + "clean.snakefile"
-include: snakefiles + "raw.snakefile"
-include: snakefiles + "map.snakefile"
-include: snakefiles + "call.snakefile"
+include: snakefiles + "download.snakefile"
+include: snakefiles + "score.snakefile"
+
 
 rule all:
     input:
-        call_doc + "call.html"
+         panther_dir + "panther_scores.tsv"
