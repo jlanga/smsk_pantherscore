@@ -1,7 +1,8 @@
 brew update
 
 brew install \
-    perl
+    perl \
+    python3
 
 brew tap homebrew/science
 

@@ -30,8 +30,8 @@ rule download_untar_hmms:
     shell:
         "tar "
             "--extract "
+            "--directory {params.out_dir} "
             "--verbose "
             "--file "
-            "--directory {params.out_dir}"
             "{input.tarball} "
         "2> {log} 1>&2"
