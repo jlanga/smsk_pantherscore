@@ -21,6 +21,8 @@ rule download_untar_hmms:
         tarball= download_dir + "PANTHER11.0_hmmscoring.tgz"
     output:
         folder= download_dir + "PANTHER11.0/"
+    params:
+        out_dir= download_dir
     log:
         download_dir + "untar_hmms.log"
     benchmark:
@@ -30,5 +32,6 @@ rule download_untar_hmms:
             "--extract "
             "--verbose "
             "--file "
+            "--directory {params.out_dir}"
             "{input.tarball} "
         "2> {log} 1>&2"
