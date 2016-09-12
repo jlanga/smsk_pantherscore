@@ -20,7 +20,7 @@ rule download_untar_hmms:
     input:
         tarball= download_dir + "PANTHER11.0_hmmscoring.tgz"
     output:
-        folder= download_dir + "PANTHER11.0/"
+        folder= touch(download_dir + "PANTHER11.0/")
     params:
         out_dir= download_dir
     log:
