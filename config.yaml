@@ -1,5 +1,5 @@
 proteome:
-    "data/proteome/spil.faa"
+    "data/proteome/transcriptome.pep"
 
 urls:
     hmms: "ftp://ftp.pantherdb.org/hmm_scoring/current_release/PANTHER11.0_hmmscoring.tgz"

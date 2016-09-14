@@ -7,5 +7,5 @@ brew install \
 brew tap homebrew/science
 
 brew install \
-    homebrew/science/blast \
-    homebrew/science/hmmer2
+    homebrew/science/hmmer2 \
+    parallel
